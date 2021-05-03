@@ -1,46 +1,27 @@
 
-
-<h1>Profil parameter</h1>
-<hr>
-
+<br><br>
+<h2  style="text-align: center;">Manage Profile</h2>
+<br>
 <dx-form id="form"
-	[formData]="form">
+	[formData]="this.subuser">
 	<dxi-item itemType="group" cssClass="first-group" [colCount]="4">
 		<dxi-item>
-			<div class="form-avatar">
 
-      </div>
+        <img src="../../../assets/users.png" >
+
+
 		</dxi-item>
 		<dxi-item itemType="group" [colSpan]="3">
-				<dxi-item dataField="name"></dxi-item>
-				<dxi-item dataField="surname"></dxi-item>
-				<dxi-item dataField="dateBirth" editorType="dxDateBox" [editorOptions]="{ width: '100%'}"></dxi-item>
+      <dxi-item caption="CIN" dataField="cin"   disabled="true"></dxi-item>
+				<dxi-item dataField="username"></dxi-item>
+				<dxi-item dataField="password"  [editorOptions]="{ mode: 'password' }">
+
+        </dxi-item>
+
 		</dxi-item>
 	</dxi-item>
-	<dxi-item itemType="group" cssClass="second-group" [colCount]="2">
-		<dxi-item itemType="group">
-      <dxi-item
-        dataField="username"
-        id="userName"
-    >
-    </dxi-item>
-    <dxi-item
-        dataField="password"
-         id="Password"
-         [editorOptions]="{ mode: 'password' }"
-    >
-    </dxi-item>
-				</dxi-item>
-		</dxi-item>
+
 </dx-form>
 <br>
-  <br>
-  &nbsp;&nbsp;
-<dx-button
-icon="edit"
-type="success"
-text="Update"
-(onClick)="save()"
-
->
-</dx-button>
+&nbsp;&nbsp;
+<dx-button icon="edit" type="success" text="Update" (onClick)="save()"> </dx-button>

@@ -1,3 +1,4 @@
+@import"../../../bootstrap.css";
 ::ng-deep .first-group,
 ::ng-deep .second-group {
     padding: 20px;
@@ -6,11 +7,8 @@
 ::ng-deep .second-group {
     background-color: rgba(191, 191, 191, 0.15);
 }
-h1{
-  text-align: center;
-font-size: large;
-}
-::ng-deep .form-avatar {
+​
+::ng-deep .form-avatar ,img{
     height: 128px;
     width: 128px;
     margin-right: 10px;

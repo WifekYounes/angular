@@ -58,17 +58,8 @@ export class AdmindashboardComponent implements OnInit {
 
 
     logout(){
-      var val = confirm("Are you sure you want to leave ?");
-if( val == true ) {
-
-  window.sessionStorage.clear();
-  this.router.navigate(['/login']);
-
-} else {
-
-}
-
-
+      window.sessionStorage.clear();
+      this.router.navigate(['/login']);
 
     }
 }
